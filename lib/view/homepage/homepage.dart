@@ -81,78 +81,81 @@ class _HomekuState extends State<Homeku> {
   // final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(top: 40),
-          child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const AppName(),
-                const SizedBox(
-                  height: 50,
-                ),
-                Container(
-                  height: 50,
-                  decoration: const BoxDecoration(
-                      color: Color(0xaa215B83),
-                      borderRadius: BorderRadius.all(Radius.circular(12))),
-                  child: const TextField(
-                    style: TextStyle(fontSize: 16, color: Colors.white),
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.only(top: 15),
-                      hintText: "Cari Tempat Liburan",
-                      hintStyle: TextStyle(color: Colors.white54, fontSize: 16),
-                      filled: true,
-                      prefixIcon: Icon(
-                        Icons.search,
-                        size: 25,
-                        color: Colors.white54,
+    return SafeArea(
+      child: ListView(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 40),
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const AppName(),
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  Container(
+                    height: 50,
+                    decoration: const BoxDecoration(
+                        color: Color(0xaa215B83),
+                        borderRadius: BorderRadius.all(Radius.circular(12))),
+                    child: const TextField(
+                      style: TextStyle(fontSize: 16, color: Colors.white),
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.only(top: 15),
+                        hintText: "Cari Tempat Liburan",
+                        hintStyle:
+                            TextStyle(color: Colors.white54, fontSize: 16),
+                        filled: true,
+                        prefixIcon: Icon(
+                          Icons.search,
+                          size: 25,
+                          color: Colors.white54,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                Text(
-                  'Kategori',
-                  style: GoogleFonts.poppins(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: const Color(0xaa215B83),
+                  const SizedBox(
+                    height: 30,
                   ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                const Kategori_page(),
-                const SizedBox(
-                  height: 30,
-                ),
-                Text(
-                  'Rekomendasi',
-                  style: GoogleFonts.poppins(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: const Color(0xaa215B83),
+                  Text(
+                    'Kategori',
+                    style: GoogleFonts.poppins(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: const Color(0xaa215B83),
+                    ),
                   ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                const SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: RekomendasiList(),
-                ),
-              ],
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Kategori_page(),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Text(
+                    'Rekomendasi',
+                    style: GoogleFonts.poppins(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: const Color(0xaa215B83),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: RekomendasiList(),
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

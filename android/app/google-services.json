@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "306198768741",
+    "project_id": "mobiledolan-4703f",
+    "storage_bucket": "mobiledolan-4703f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306198768741:android:2d537101dee169d09aaa8c",
+        "android_client_info": {
+          "package_name": "com.example.myprojekpbm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306198768741-vsjm7lok326ak9s5e1a1o5pt7i2nqbtv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myprojekpbm",
+            "certificate_hash": "531e726e11426a5cb4fcc7751493f09241230f19"
+          }
+        },
+        {
+          "client_id": "306198768741-tu6kl50mh620hm8af00arresi3prndnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9jzExpNdVtHeOne65H9hb1pJC2tskLiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306198768741-tu6kl50mh620hm8af00arresi3prndnm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
